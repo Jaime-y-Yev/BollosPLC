@@ -1,0 +1,19 @@
+SET
+S     "M0"                          M8.0               -- Espera a la selección y confirmación del tipo de producto      
+S     "M10"                         M8.1               -- Modo encendido pero desactivado de la máquina      
+R     "ML"                          M6.0               -- Adición de leche      
+R     "MH"                          M6.1               -- Adición de harina      
+R     "MA"                          M6.2               -- Mezclado de leche y harina      
+R     "MMasaComp"                   M6.3               -- Espera a la inspección de la masa      
+R     "MCont"                       M6.4               -- Espera la confirmación del ciclo elegido      
+R     "M1"                          M6.5               -- Extracción de mezcla a dispensar      
+R     "M2"                          M6.6               -- Dispensado de mezcla sobre la cinta      
+R     "M3"                          M6.7               -- Transporte de mezcla sobre la cinta      
+R     "M11"                         M8.2               -- Modo encendido y activado de la máquina, listo para la selección de producto      
+R     "Watchdog Masa"               T3                 -- Temporizador del watchdog de la masa      
+R     "Watchdog Dispensador"        T4                 -- Temporizador del watchdog del dispensador      
+R     "M20"                         M8.5               -- Estado de emergencia automático cuando hay un problema con la masa      
+R     "M21"                         M8.6               -- Estado de emergencia automático cuando hay un problema con el dispensado      
+R     "M22"                         M8.7               -- Estado de emergencia manual      
+R     "Cont"                        Z1                 -- Cuenta número de ciclos a completar      
+R     "ContComp"                    Z2                 -- Cuenta número de ciclos completados
