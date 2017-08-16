@@ -1,3 +1,7 @@
+-- Este bloque se ejecuta cada vez que se arranca el PLC. Establece las marcas iniciales y resetea las demás marcas, 
+-- los temporizadores, y los contadores.
+
+
 SET
 S     "M0"                          M8.0               -- Espera a la selección y confirmación del tipo de producto      
 S     "M10"                         M8.1               -- Modo encendido pero desactivado de la máquina      
