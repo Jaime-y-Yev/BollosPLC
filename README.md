@@ -1,1 +1,5 @@
-# BollosPLC
+Proyecto de la asignatura de Automatización del Máster. Se trata de un PLC que controla la fabricación de tres tipos de bollos (magdalenas, rosquillas, y bizcochos) según unas proporciones variables y programadas de leche y harina, que mezclan según unos tiempos variables de un agitador. 
+
+El código se estructura en bloques de función llamados desde el programa principal. Algunos bloques contienen saltos, conversiones entre tipos de datos, y una interpolación para registrar valores de un potenciómetro. El código detecta los flancos de los botones y las señales de sensores de posición y de nivel para activar a un agitador y un cilindro. El programa va ciclando por unas marcas, indicando las más importantes con LEDs, mientras mantiene unos temporizadores para el agitador y unos contadores para ejecutar sus ciclos. También incluye unas marcas de emergencia y unos temporizadores "watchdogs" como medida de seguridad. 
+
+Permite el control en persona mediante una interfaz de hardware, así como el control remoto mediante una aplicación SCADA (WinCC).
